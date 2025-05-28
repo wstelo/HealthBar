@@ -1,16 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public abstract class HealthBar : MonoBehaviour
 {
-    [SerializeField] private Health _health;
-    [SerializeField] private Slider _slider;
-
-    private void Start()
-    {
-        _slider.maxValue = _health.MaxValue;
-        _slider.value = _health.CurrentValue;
-    }
+    [SerializeField] protected Health _health;
 
     private void OnEnable()
     {
@@ -22,8 +14,8 @@ public class HealthBar : MonoBehaviour
         _health.ChangedValue -= ChangeValue;
     }
 
-    private void ChangeValue(float value)
+    public virtual void ChangeValue(float value)
     {
-        _slider.value = value;
+
     }
 }
