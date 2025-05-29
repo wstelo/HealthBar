@@ -2,16 +2,16 @@ using UnityEngine;
 
 public abstract class HealthBar : MonoBehaviour
 {
-    [SerializeField] protected Health _health;
+    [SerializeField] protected Health Health;
 
     private void OnEnable()
     {
-        _health.ChangedValue += ChangeValue;
+        Health.ChangedValue += ChangeValue;
     }
 
     private void OnDisable()
     {
-        _health.ChangedValue -= ChangeValue;
+        Health.ChangedValue -= ChangeValue;
     }
 
     public virtual void ChangeValue(float value)

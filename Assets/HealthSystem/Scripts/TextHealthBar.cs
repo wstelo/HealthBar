@@ -7,11 +7,11 @@ public class TextHealthBar : HealthBar
 
     private void Start()
     {
-        _text.text = $"{_health.CurrentValue} / {_health.MaxValue} ";
+        _text.text = $"{Health.CurrentValue} / {Health.MaxValue} ";
     }
 
     public override void ChangeValue(float value)
     {
-        _text.text = $"{value} / {_health.MaxValue} ";
+        _text.text = $"{value} / {Health.MaxValue} ";
     }
 }

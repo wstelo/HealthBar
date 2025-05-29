@@ -959,9 +959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2da0480092ad11468f1a7280cc39649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: {fileID: 19680353}
-  _damageButton: {fileID: 974148495}
-  _healButton: {fileID: 1681728540}
+  Health: {fileID: 0}
+  _button: {fileID: 0}
+  _value: 20
 --- !u!1001 &3418759176298412515
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ public class SimpleHealthBar : HealthBar
 
     private void Start()
     {
-        _slider.maxValue = _health.MaxValue;
-        _slider.value = _health.CurrentValue;
+        _slider.maxValue = Health.MaxValue;
+        _slider.value = Health.CurrentValue;
     }
 
     public override void ChangeValue(float value)
